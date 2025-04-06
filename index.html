@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Raj Portfolio </title>
+</head>
+
+<body class="light-theme">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo agentic-title">Raj Patidar</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                          <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                      </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Raj Patidar</h1>
+                    <h3 class="home__education">CSE(DS) Student</h3>
+
+                    <div class="home__button">
+
+                        <a href="#about" class="button">About</a>
+
+                        <a download="" href="https://github.com/rajpatidar12/resume/blob/main/Raj%20Patidar%20(1).pdf" target="_blank"
+                            class="button button--ghost">
+                            Download Resume
+                        </a>
+
+            
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/home.jpg" alt="" class="home__img">
+                </div>
+
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/rajpatidar1" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/rajpatidar12" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="https://codolio.com/profile/rajpatidar_1" target="_blank" class="home__social-link" aria-label="Codolio Profile">
+                        <img src="assets/img/codolio.png" alt="Codolio" style="width: 24px; height: 24px;">
+                    </a>
+
+                </div>
+
+               
+                
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Introduction</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/sider.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">Fresher</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Projects</h3>
+            
+                        </div>
+
+                    </div>
+                    
+                    <style>
+                        .about__description {
+                            position: relative;
+                            padding: 20px;
+                        }
+                    
+                        .shine-line {
+                            background: linear-gradient(90deg, rgba(238, 130, 238, 0.6), rgba(148, 0, 211, 0.8), rgba(238, 130, 238, 0.6));
+                            height: 2px; /* Thin line */
+                            width: 100%;
+                            position: relative;
+                            overflow: hidden;
+                            margin: 20px 0; /* Adds space before and after the shine line */
+                        }
+                    
+                        .shine-line::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(90deg, rgba(238, 130, 238, 0.6), rgba(148, 0, 211, 0.8), rgba(238, 130, 238, 0.6));
+                            animation: shine 2s infinite;
+                        }
+                    
+                        @keyframes shine {
+                            0% {
+                                left: -100%;
+                            }
+                            100% {
+                                left: 100%;
+                            }
+                        }
+                    </style>
+                    
+                    <div class="about__description">
+                        <!-- About Me Section -->
+                        <ul style="list-style-type:disc">
+                            <li><strong>Hi, I'm Raj</strong>, an aspiring <strong>Software Developer</strong> passionate about building scalable applications and solving real-world problems through code.</li>
+                            <li>Currently pursuing <strong>Computer Science Engineering</strong>, I have hands-on experience in <strong>Full-Stack Development, Data Structures & Algorithms</strong>.</li>
+                            <li>Focusing on clean code, performance, and usability.</li>
+                            <li>I’m eager to leverage my skills to contribute to innovative teams and develop impactful software solutions.</li>
+                        </ul>
+                        
+                        <div class="shine-line"></div>
+                    
+                        <!-- Closing Section -->
+                        <ul>
+                            <li>Let’s Connect!  
+                                I'm excited to bring my passion for Software Development, my hands-on project experience, and my dedication to continuous learning to your team. As a committed developer and open-source enthusiast, I strive to build clean, efficient, and impactful software. Let’s connect to explore how I can contribute to your organization’s success and innovation. 😊
+                            </li>
+                        </ul>
+                        
+                    </div> 
+
+
+
+
+
+
+                
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Skills</h2>
+        
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Primary Skills</h3>
+        
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Java Script</h3>
+                                    <span class="skills__level">Adavance</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                        
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">C,C++</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                
+        
+                           
+        
+                            <div>
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">OOPS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">MongoDB</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">VS Code</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+
+
+        
+       
+       <style>
+      
+/* Agentic AI Projects heading with white shine effect */
+.agentic-title {
+    color: #8a2be2; /* Baingani text */
+    font-weight: bold;
+    text-shadow: 
+        0 0 10px #ffffff, 
+        0 0 20px #ffffff, 
+        0 0 30px #ffffff, 
+        0 0 40px #ffffff;
+    animation: white-glow 1.5s infinite alternate;
+}
+
+/* White Glowing Animation */
+@keyframes white-glow {
+    0% {
+        text-shadow: 
+            0 0 5px #ffffff, 
+            0 0 10px #ffffff, 
+            0 0 15px #ffffff;
+    }
+    100% {
+        text-shadow: 
+            0 0 10px #ffffff, 
+            0 0 20px #ffffff, 
+            0 0 30px #ffffff,
+            0 0 40px #ffffff;
+    }
+}
+
+    </style>
+                
+
+<section class="portfolio section" id="portfolio">
+    <h1 class="section__title">Recent Works</h1>
+    <h3 class="section__title agentic-title">Projects</h3>
+    <span class="section__subtitle">📁My Portfolio</span>
+
+    <div class="portfolio__container container grid">
+        <!-- Project 1: CodeSandbox Clone -->
+  <div class="portfolio__content">
+    <img src="assets/img/home.png" alt="CodeSandbox Clone" class="portfolio__img" />
+    <img src="assets/img/Inner.png" alt="CodeSandbox Clone" class="portfolio__img" />
+    <div class="portfolio__info">
+      <h3 class="portfolio__title">CodeSandbox Clone</h3>
+      <p class="portfolio__description">
+        A full-featured CodeSandbox-style code editor built using the MERN stack, Docker containers, and a CLI-driven shell environment. It supports live code execution and multi-file editing.
+      </p>
+      <a href="https://github.com/rajpatidar12/ProjectIDXClone" target="_blank" class="button button--ghost">
+        View Code
+      </a>
+    </div>
+  </div>
+
+</div>
+
+        
+</section>
+
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">patidarraj465@gmail.com</span>
+
+                            <a href="mailto:patidarraj465@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">9753075254</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+9753075254&text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+                        <button class="button">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Raj</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+              
+             
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/rajpatidar1/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/rajpatidar12" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2025 Raj. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
