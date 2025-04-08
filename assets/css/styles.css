@@ -23,7 +23,7 @@ body::before {
   background: url("https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center center fixed;
   background-size: cover;
-  filter: blur(8px) brightness(0.85); /* Adjust blur/brightness as needed */
+  filter: blur(2px) brightness(0.95); /* Adjust blur/brightness as needed */
   z-index: -1;
 }
 
@@ -360,7 +360,7 @@ body.light-theme {
 }
 
 .home__img {
-  width: 250px;
+  width: 300px;
 }
 
 .home__handle {
@@ -373,7 +373,7 @@ body.light-theme {
     hsla(var(--first-hue), var(--sat), var(--lig), 0.1)
   );
 
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 15rem 15rem 1rem 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -470,8 +470,8 @@ body.light-theme {
 }
 
 .about__img {
-  width: 220px;
-  border-radius: 1.5rem;
+  width: 300px;
+  border-radius: 20px;
   justify-self: center;
 }
 
@@ -524,7 +524,7 @@ body.light-theme {
 .skills__content {
   background-color: var(--container-color);
   padding: 1.5rem;
-  border-radius: 1.25rem;
+  border-radius: 3rem;
 }
 
 .skills__title {
@@ -532,7 +532,7 @@ body.light-theme {
   font-weight: var(--font-medium);
   color: var(--first-color);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .skills__box {
@@ -563,11 +563,11 @@ body.light-theme {
   line-height: 18px;
 }
 
-.skills__level {
+/* .skills__level {
   font-size: var(--small-font-size);
-}
+} */
 
-/*=============== WORK EXPERIENCE ===============*/
+/* =============== WORK EXPERIENCE ===============
 .experience {
   padding: 3rem 0;
   background-color: var(--body-color);
@@ -649,7 +649,7 @@ body.light-theme {
   font-size: 1rem;
   color: var(--text-color);
   line-height: 1.6;
-}
+} */
 
 /* Media queries */
 @media screen and (min-width: 768px) {
@@ -877,7 +877,7 @@ body.light-theme {
   }
 
   .home__img {
-    width: 150px;
+    width: 300px;
   }
 
   .about__info {
@@ -1027,12 +1027,13 @@ body.light-theme {
   }
 
   .home__handle {
-    width: 290px;
+    width: 300px;
     height: 300px;
   }
 
   .home__img {
-    width: 220px;
+    width: 280px;
+    border-radius: 20px;
   }
 
   .home__social-link {
@@ -1055,7 +1056,7 @@ body.light-theme {
   }
 
   .about__img {
-    width: 350px;
+    width: 400px;
   }
 
   .about__data {
