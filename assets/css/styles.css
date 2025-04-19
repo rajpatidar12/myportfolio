@@ -355,7 +355,7 @@ body.light-theme {
 }
 
 .home__name {
-  font-size: var(--biggest-font-size);
+  font-size: 20px;
   color: var(--first-color);
 }
 
