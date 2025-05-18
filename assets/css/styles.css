@@ -12,7 +12,23 @@ body {
   z-index: 0;
 }
 
-/* Background layer */
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.change-bg {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--text-color);
+}
+
+.change-bg:hover {
+  color: var(--first-color);
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -20,12 +36,28 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://media4.giphy.com/media/Nm8hsggYNt3oqx5Elx/giphy.gif?cid=6c09b952b5jivj7a6wihlhjr7uu75cehpelv3sg7rplsem0a&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g")
+  background: url("https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center center fixed;
   background-size: cover;
-  filter: blur(2px) brightness(0.95); /* Adjust blur/brightness as needed */
+  filter: blur(2px) brightness(0.95);
   z-index: -1;
+  transition: background-image 0.5s ease-in-out;
 }
+
+/* Background layer */
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tnbmZubWhnNjNyMmExbWkwa2xhZmdoZ2twbGlpOWE3MTNrdjc3eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U5OgQSxhzjR1t4McGc/giphy.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(2px) brightness(0.95); /* Adjust blur/brightness as needed
+  z-index: -1;
+} */
 
 :root {
   --header-height: 3.5rem;
